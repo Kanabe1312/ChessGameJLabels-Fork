@@ -1,19 +1,28 @@
-package chess;
+package chess.pieces;
 
 import javax.swing.*;
 
-public abstract class ChessSprite extends JLabel {
+public abstract class ChessSprite {
     protected int boardX;
     protected int boardY;
-    protected ImageIcon icon;
-    protected ImageIcon highlightedIcon;
+
+    private ImageIcon normalIcon;
+    private ImageIcon highlightedIcon;
+    private boolean highlighted = false;
 
     public ChessSprite(String imagefile, String highlightedImageFile, int x, int y) {
-        icon = new ImageIcon(imagefile);
+        normalIcon = new ImageIcon(imagefile);
         highlightedIcon = new ImageIcon(highlightedImageFile);
-        setIcon(icon);
         this.boardX = x;
         this.boardY = y;
+    }
+
+    public void setHighlighted(boolean highlighted) {
+        this.highlighted = highlighted;
+    }
+
+    public boolean isHighlighted() {
+        return highlighted;
     }
 
     public int getBoardX() {
@@ -30,5 +39,12 @@ public abstract class ChessSprite extends JLabel {
 
     public void setBoardY(int boardY) {
         this.boardY = boardY;
+    }
+
+    public ImageIcon getCurrentIcon() {
+        if(isHighlighted()) {
+            return highlightedIcon;
+        }
+        return normalIcon;
     }
 }

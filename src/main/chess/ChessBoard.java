@@ -1,5 +1,9 @@
 package chess;
 
+import chess.pieces.ChessField;
+import chess.pieces.ChessPiece;
+import chess.pieces.Pawn;
+
 import java.util.ArrayList;
 
 public class ChessBoard {

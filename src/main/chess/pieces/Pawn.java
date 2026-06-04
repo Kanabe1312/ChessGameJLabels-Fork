@@ -1,6 +1,6 @@
-package chess;
+package chess.pieces;
 
-import java.awt.event.MouseEvent;
+import chess.ChessBoard;
 
 public class Pawn extends ChessPiece {
     public Pawn(ChessBoard board, int x, int y, Color color) {
