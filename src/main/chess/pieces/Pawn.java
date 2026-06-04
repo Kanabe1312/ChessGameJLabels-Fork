@@ -1,7 +1,5 @@
 package chess.pieces;
 
-import chess.ChessBoard;
-
 public class Pawn extends ChessPiece {
     public Pawn(ChessBoard board, int x, int y, Color color) {
         super(board, "resources/Chess_p" + (color == Color.WHITE?"l":"d") + "t60.png", "resources/Chess_pat60.png", x, y, color);

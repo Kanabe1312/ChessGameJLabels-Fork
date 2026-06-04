@@ -1,9 +1,6 @@
 package chess.pieces;
 
-import chess.ChessBoard;
-
 public abstract class ChessPiece extends ChessSprite {
-    public enum Color {WHITE, BLACK};
     private Color color;
     private ChessBoard board;
 

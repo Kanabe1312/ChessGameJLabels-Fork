@@ -1,8 +1,9 @@
 package chess;
 
+import chess.ui.GamePanel;
+import chess.pieces.ChessBoard;
 import chess.pieces.ChessPiece;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;

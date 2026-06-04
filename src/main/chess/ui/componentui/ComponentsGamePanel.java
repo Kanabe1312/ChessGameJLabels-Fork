@@ -1,27 +1,26 @@
-package chess;
+package chess.ui.componentui;
 
-import chess.labelui.PieceLabel;
+import chess.ui.GamePanel;
 import chess.pieces.ChessField;
 import chess.pieces.ChessPiece;
-import chess.pieces.ChessSprite;
 
 import java.util.ArrayList;
 
-public class GamePanelComponents extends GamePanel {
+public class ComponentsGamePanel extends GamePanel {
     private ArrayList<PieceLabel> labels = new ArrayList<>();
 
-    public GamePanelComponents(int fieldSize) {
+    public ComponentsGamePanel(int fieldSize) {
         super(fieldSize);
-        ChessPieceMouseListener listener = new ChessPieceMouseListener(this);
         setLayout(null);
-        for(ChessPiece p : getBoard().getPieces()) {
+/*        ChessPieceMouseListener listener = new ChessPieceMouseListener(this);
+        for(ChessPiece p : getBoard().getPieces()) { // TODO
             PieceLabel pieceLabel = new PieceLabel(p);
             pieceLabel.setBounds(p.getBoardX()*fieldSize, p.getBoardY()*fieldSize,
                     fieldSize, fieldSize);
             pieceLabel.addMouseListener(listener);
             labels.add(pieceLabel);
             add(pieceLabel);
-        }
+        }*/
         for(ChessField[] row : getBoard().getFields()) {
             for(ChessField f : row) {
                 PieceLabel l = new PieceLabel(f);
@@ -34,7 +33,7 @@ public class GamePanelComponents extends GamePanel {
     }
 
     @Override
-    public void updateGUI() {
+    public void updateGUI() { // TODO
        for(PieceLabel l : labels) {
            l.updateIcon();
        }

@@ -1,8 +1,7 @@
-package chess;
+package chess.ui.componentui;
 
-import chess.labelui.PieceLabel;
+import chess.ui.GamePanel;
 import chess.pieces.ChessPiece;
-import chess.pieces.ChessSprite;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -57,7 +56,7 @@ public class ChessPieceMouseListener implements MouseListener {
             PieceLabel l = (PieceLabel) c;
             if(l.getSprite() instanceof ChessPiece) {
                 ChessPiece p = (ChessPiece) l.getSprite();
-                l.setHighlighted(false);
+                l.getSprite().setHighlighted(false);
                 panel.getBoard().unhighlightAll();
             }
             panel.updateGUI();
