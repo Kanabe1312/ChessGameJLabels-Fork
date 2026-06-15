@@ -1,8 +1,10 @@
 # Hintergrund
 
-Über die nächsten 3 Aufgaben hinweg üben Sie das Erstellen von GUIs und einige Pattern der objektorientierten Softwareentwicklung. Dabei entwickeln Sie die Basis für ein Schachspiel. Die Aufgaben beinhalten nur die reine Basis - wenn Sie Spaß daran haben, können Sie aber diese Basis beliebig für Erweiterungen nutzen und sie sogar, je nach Umfang, zu einem Projekt für das Semester ausbauen.
+Über die nächsten 2 Aufgaben hinweg üben Sie das Erstellen von GUIs und einige Pattern der objektorientierten Softwareentwicklung. Dabei entwickeln Sie die Basis für ein Schachspiel. Die Aufgaben beinhalten nur die reine Basis - wenn Sie Spaß daran haben, können Sie aber diese Basis beliebig für Erweiterungen nutzen und sie sogar, je nach Umfang, zu einem Projekt für das Semester ausbauen.
 
 Für die Bearbeitung werden Sie einige Java-Standard-Klassen verwenden, die in der Vorlesung nicht im Detail besprochen wurden. Verwenden Sie, um ein Gefühl für deren Einsatzmöglichkeiten zu bekommen, die [Java-Dokumentation](https://docs.oracle.com/en/java/javase/26/) und/oder Google. Niemand kennt alle Standard-Klassen aus dem Kopf - Wissen ist hier wirklich wissen wo was steht.
+
+Da es sich hier um eine recht komplexe Übungsaufgabe handelt, finden Sie - falls etwas nicht verständlich ist und Sie selber nachschauen wollen - im Branch `solutions` in diesem git-repository eine Beispiellösung für die vollständige Aufgabe.
 
 # JLabel-basiertes UI
 
