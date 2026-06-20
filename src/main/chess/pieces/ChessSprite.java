@@ -27,7 +27,7 @@ public abstract class ChessSprite {
 
         normalIcon = new ImageIcon(imagefile);
         highlightedIcon = new ImageIcon(highlightedImageFile);
-
+        System.out.println(imagefile + " width=" + normalIcon.getIconWidth());
         highlighted = false;
     }
 
