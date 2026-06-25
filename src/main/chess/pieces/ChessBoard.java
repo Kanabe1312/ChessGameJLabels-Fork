@@ -36,23 +36,9 @@ public class ChessBoard {
 
         for (int x = 0; x < 8; x++) {
 
-            pieces.add(
-                    new Pawn(
-                            this,
-                            x,
-                            1,
-                            ChessSprite.Color.BLACK
-                    )
-            );
+            pieces.add(new Pawn(this, x, 1, ChessSprite.Color.BLACK));
 
-            pieces.add(
-                    new Pawn(
-                            this,
-                            x,
-                            6,
-                            ChessSprite.Color.WHITE
-                    )
-            );
+            pieces.add(new Pawn(this, x, 6, ChessSprite.Color.WHITE));
         }
 
 

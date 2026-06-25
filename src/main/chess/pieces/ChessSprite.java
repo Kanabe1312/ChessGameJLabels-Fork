@@ -11,16 +11,15 @@ public abstract class ChessSprite {
 
     protected int boardX;
     protected int boardY;
-
-    private boolean highlighted;
-
     private ImageIcon normalIcon;
     private ImageIcon highlightedIcon;
 
-    public ChessSprite(String imagefile,
-                       String highlightedImageFile,
-                       int boardX,
-                       int boardY) {
+    private boolean highlighted;
+
+
+
+    public ChessSprite(String imagefile, String highlightedImageFile,
+                       int boardX, int boardY) {
 
         this.boardX = boardX;
         this.boardY = boardY;
